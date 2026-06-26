@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Silari Restaurant</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header>
+    <h1>Silari Restaurant</h1>
+    <nav>
+      <a href="{{ url_for('home') }}">Home</a>
+      <a href="{{ url_for('menu') }}">Menu</a>
+      <a href="{{ url_for('cart_page') }}">Cart</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Delicious food in Boath Buzurg</h2>
+    <p>Order your favorite items online and enjoy in our restaurant.</p>
+    <a class="btn" href="{{ url_for('menu') }}">View Menu</a>
+  </section>
+</body>
+</html>
